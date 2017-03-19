@@ -1,10 +1,9 @@
-export const rules = {
-  getUrl: '/api/url/',
-  getUrl2: '/api/url2/',
+export const link = {
+  products: '/api/products'
 }
 
 export function saveToServer (data, cb) {
-  this.$http.get(rules.getUrl).then((response) => {
+  this.$http.get(link.products).then((response) => {
     cb(response)
   }, (response) => {
     console.log('Ой, ошибка! Она очень плохая и находится в api')

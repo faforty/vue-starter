@@ -1,4 +1,3 @@
-// import 'babel-polyfill'
 import Vue from 'vue'
 import App from 'views/app'
 import router from 'src/router'

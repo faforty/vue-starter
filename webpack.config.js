@@ -79,8 +79,6 @@ module.exports = (options = {}) => ({
       'assets': resolve(__dirname, 'src/assets'),
       'components': resolve(__dirname, 'src/components'),
       'views': resolve(__dirname, 'src/views'),
-      'uikit-vue': 'uikit-agro24/src/vue',
-      'uikit': 'uikit-agro24/src/vue/components',
     },
     modules: ["node_modules"]
   },
@@ -90,15 +88,15 @@ module.exports = (options = {}) => ({
   devServer: {
     host: '127.0.0.1',
     port: 8010,
-    proxy: {
-      '/api/*': {
-        target: 'https://tp.agro24.ru',
-        changeOrigin: true,
+    // proxy: {
+    //   '/api/*': {
+    //     target: 'https://localhost/',
+    //     changeOrigin: true,
         // pathRewrite: {
           // '^/api': ''
         // }
-      }
-    },
+    //   }
+    // },
     historyApiFallback: {
       index: url.parse(options.dev ? '/assets/' : publicPath).pathname
     }

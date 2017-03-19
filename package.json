@@ -1,15 +1,13 @@
 {
   "name": "vue-starter",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "vue speed start",
   "scripts": {
     "dev": "webpack-dev-server -d --inline --hot --env.dev",
     "build": "rimraf dist && webpack -p --progress --hide-modules"
   },
   "dependencies": {
-    "babel-polyfill": "^6.20.0",
-    "vue": "2.1.6",
+    "vue": "^2.1.8",
     "vue-router": "^2.1.1",
     "vuex": "^2.1.1"
   },
@@ -34,7 +32,7 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "vue-loader": "^10.0.0",
-    "vue-template-compiler": "2.1.6",
+    "vue-template-compiler": "^2.2.4",
     "webpack": "beta",
     "webpack-dev-server": "beta"
   }

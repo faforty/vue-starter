@@ -8,11 +8,11 @@ export default new Router({
     routes: [{
             name: 'home',
             path: '',
-            redirect: '/about',
+            redirect: '/about'
         }, {
             name: 'about',
             path: '/about',
-            component: () => System.import('views/about.vue'),
+            component: () => System.import('views/about.vue')
         }
     ]
 })

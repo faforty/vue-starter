@@ -9,25 +9,7 @@ Vue.use(Vuex)
 const debug = process.env.NODE_ENV !== 'production'
 
 const state = {
-  isStep: JSON.parse(localStorage.getItem('fillingStatus')) || {},
-  productOptions: JSON.parse(localStorage.getItem('productOptions')) || {},
-  productFilling: JSON.parse(localStorage.getItem('productFilling')) || {
-    company: {},
-    product: {},
-    purchase: {},
-    need: {},
-    place: {},
-    cost: {},
-    payment: {},
-    garant: {},
-    disbursement: {},
-    comments: {},
-    quality: {},
-    unfit: {},
-    refund: {},
-    packaging: {},
-    docs: {},
-  }
+  products: {}
 }
 
 export default new Vuex.Store({
@@ -35,5 +17,5 @@ export default new Vuex.Store({
   actions,
   getters,
   mutations,
-  strict: debug,
+  strict: debug
 })
